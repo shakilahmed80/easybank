@@ -1,0 +1,103 @@
+ID,types_of_loan,bank_name,interest_rate,processing_fee_range,loan_amount,tenure_range
+1,Education Loan,HSBC,upto 4%,Up to 3.50%,Up to BDT25L,Up to 5 Years
+2,Education Loan,Dutch-Bangla Bank,upto 2%,3.00% - 6.00%,Up to BDT25L,1 - 4 Years
+3,Education Loan,Sonali Bank,upto 4%,Up to 3.50%,Up to BDT25L,1 - 4 Years
+4,Education Loan,IBBL,upto 2%,Up to 3%,Up to BDT25L,1 - 6 Years
+5,Education Loan,Grameen Bank,upto 4%,Up to 2.50%,Up to BDT25L,1 - 6 Years
+6,Education Loan,Janata Bank,upto 2%,Up to 2.50%,Up to BDT25L,1 - 4 Years
+7,Education Loan,Standard Chartered,upto 4%,Up to 2.75%,Up to BDT25L,Up to 5 Years
+8,Education Loan,Prime Bank,upto 2%,Up to 2.00%,Up to BDT25L,1 - 6 Years
+9,Education Loan,Habib Bank Limited,upto 4%,Up to 2.00%,Up to BDT25L,1 - 6 Years
+10,Education Loan,Brac Bank,upto 2%,Up to 2%,Up to BDT25L,1 - 4 Years
+11,Education Loan,UCB Bank,upto 4%,2.00% - 3.00%,Up to BDT25L,1 - 6 Years
+12,Education Loan,City Bank,upto 2%,2.00% - 5.00%,Up to BDT25L,1 - 4 Years
+13,Education Loan,Mutual Trust,upto 2%,Up to 2.5%,Up to BDT25L,Up to 5 Years
+14,Education Loan,Jamuna Bank,upto 4%,Up to 1%,Up to BDT25L,1 - 6 Years
+15,Education Loan,Eastern Bank,upto 2%,0.75% onwards,Up to BDT25L,1 - 4 Years
+16,Education Loan,Dhaka Bank,upto 2%,0.50% - 3.00%,Up to BDT25L,1 - 6 Years
+17,Education Loan,Uttara Bank,upto 4%,Zero,Up to BDT25L,Up to 5 Years
+18,Home Loan,HSBC,6.70% - 7.50%,Up to 3.50%,5L -10Cr,Up to 5 Years
+19,Home Loan,Dutch-Bangla Bank,6.90% - 8.05%,3.00% - 6.00%,5L -10Cr,1 - 4 Years
+20,Home Loan,Sonali Bank,6.70% - 7.50%,Up to 3.50%,30L - 5Crs,1 - 4 Years
+21,Home Loan,IBBL,9% – 12.50%,3.00%,30L - 5Crs,1 - 6 Years
+22,Home Loan,Grameen Bank,6.70% - 7.50%,Up to 2.50%,5L -10Cr,1 - 6 Years
+23,Home Loan,Janata Bank,9% – 12.50%,Up to 2.50%,30L - 5Crs,1 - 4 Years
+24,Home Loan,Standard Chartered,6.90% - 8.05%,Up to 2.75%,30L - 5Crs,Up to 5 Years
+25,Home Loan,Prime Bank,6.70% - 7.50%,Up to 2.00%,5L -10Cr,1 - 6 Years
+26,Home Loan,Habib Bank Limited,9% – 12.50%,Up to 2.00%,30L - 5Crs,1 - 6 Years
+27,Home Loan,Brac Bank,6.90% - 8.05%,2.00%,30L - 5Crs,1 - 4 Years
+28,Home Loan,UCB Bank,6.70% - 7.50%,2.00% - 3.00%,5L -10Cr,1 - 6 Years
+29,Home Loan,City Bank,9% – 12.50%,2.00% - 5.00%,30L - 5Crs,1 - 4 Years
+30,Home Loan,Mutual Trust,6.70% - 7.50%,2.50%,30L - 5Crs,Up to 5 Years
+31,Home Loan,Jamuna Bank,9% – 12.50%,1.00%,30L - 5Crs,1 - 6 Years
+32,Home Loan,Eastern Bank,6.90% - 8.05%,0.75% onwards,5L -10Cr,1 - 4 Years
+33,Home Loan,Dhaka Bank,6.70% - 7.50%,0.50% - 3.00%,30L - 5Crs,1 - 6 Years
+34,Home Loan,Uttara Bank,9% – 12.50%,Zero,5L -10Cr,Up to 5 Years
+35,Car Loan,HSBC,6.70% - 7.50%,Up to 3.50%,upto 3 cr,Up to 5 Years
+36,Car Loan,Dutch-Bangla Bank,6.90% - 8.05%,3.00% - 6.00%,upto 3 cr,1 - 4 Years
+37,Car Loan,Sonali Bank,6.70% - 7.50%,Up to 3.50%,upto 3 cr,1 - 4 Years
+38,Car Loan,IBBL,9% – 12.50%,3.00%,upto 3 cr,1 - 6 Years
+39,Car Loan,Grameen Bank,6.70% - 7.50%,Up to 2.50%,30L - 5Crs,1 - 6 Years
+40,Car Loan,Janata Bank,9% – 12.50%,Up to 2.50%,upto 3 cr,1 - 4 Years
+41,Car Loan,Standard Chartered,6.90% - 8.05%,Up to 2.75%,upto 3 cr,Up to 5 Years
+42,Car Loan,Prime Bank,6.70% - 7.50%,Up to 2.00%,30L - 5Crs,1 - 6 Years
+43,Car Loan,Habib Bank Limited,9% – 12.50%,Up to 2.00%,upto 1 cr,1 - 6 Years
+44,Car Loan,Brac Bank,6.90% - 8.05%,2.00%,upto 3 cr,1 - 4 Years
+45,Car Loan,UCB Bank,6.70% - 7.50%,2.00% - 3.00%,30L - 5Crs,1 - 6 Years
+46,Car Loan,City Bank,9% – 12.50%,2.00% - 5.00%,30L - 5Crs,1 - 4 Years
+47,Car Loan,Mutual Trust,6.70% - 7.50%,2.50%,30L - 2cr,Up to 5 Years
+48,Car Loan,Jamuna Bank,9% – 12.50%,1.00%,upto 3 cr,1 - 6 Years
+49,Car Loan,Eastern Bank,6.90% - 8.05%,0.75% onwards,30L - 5Crs,1 - 4 Years
+50,Car Loan,Dhaka Bank,6.70% - 7.50%,0.50% - 3.00%,upto 3 cr,1 - 6 Years
+51,Car Loan,Uttara Bank,9% – 12.50%,Zero,upto 1 cr,Up to 5 Years
+52,Loan Against Property,HSBC,12%,Up to 3.50%,upto 3 cr,Up to 5 Years
+53,Loan Against Property,Dutch-Bangla Bank,14%,3.00% - 6.00%,upto 3 cr,Up to 3 Years
+54,Loan Against Property,Sonali Bank,7.90%,Up to 3.50%,upto 3 cr,Up to 3 Years
+55,Loan Against Property,IBBL,12%,3.00%,upto 3 cr,Up to 5 Years
+56,Loan Against Property,Grameen Bank,7.90%,Up to 2.50%,30L - 5Crs,Up to 5 Years
+57,Loan Against Property,Janata Bank,14%,Up to 2.50%,upto 3 cr,Up to 3 Years
+58,Loan Against Property,Standard Chartered,7.90%,Up to 2.75%,upto 3 cr,Up to 3 Years
+59,Loan Against Property,Prime Bank,12%,Up to 2.00%,30L - 5Crs,Up to 5 Years
+60,Loan Against Property,Habib Bank Limited,7.90%,Up to 2.00%,upto 1 cr,Up to 3 Years
+61,Loan Against Property,Brac Bank,14%,2.00%,upto 3 cr,Up to 5 Years
+62,Loan Against Property,UCB Bank,7.90%,2.00% - 3.00%,30L - 5Crs,Up to 3 Years
+63,Loan Against Property,City Bank,12%,2.00% - 5.00%,30L - 5Crs,Up to 3 Years
+64,Loan Against Property,Mutual Trust,7.90%,2.50%,30L - 2cr,Up to 5 Years
+65,Loan Against Property,Jamuna Bank,12%,1.00%,upto 3 cr,Up to 3 Years
+66,Loan Against Property,Eastern Bank,14%,0.75% onwards,30L - 5Crs,Up to 5 Years
+67,Loan Against Property,Dhaka Bank,7.90%,0.50% - 3.00%,upto 3 cr,Up to 3 Years
+68,Loan Against Property,Uttara Bank,12.00%,Zero,upto 1 cr,Up to 5 Years
+69,Personal Loan,HSBC,11.00% - 16.75%,Up to 3.50%,Up to BDT25L,Up to 5 Years
+70,Personal Loan,Dutch-Bangla Bank,11.99% - 25.00%,3.00% - 6.00%,Up to BDT30L,1 - 4 Years
+71,Personal Loan,Sonali Bank,12.50% - 18.00%,Up to 3.50%,Up to BDT25L,1 - 4 Years
+72,Personal Loan,IBBL,25.00% - 32.00%,3.00%,Up to BDT40L,1 - 6 Years
+73,Personal Loan,Grameen Bank,10.50% - 16.99%,Up to 2.50%,Up to BDT90L,1 - 6 Years
+74,Personal Loan,Janata Bank,10.75% - 21.50%,Up to 2.50%,Up to BDT25L,1 - 4 Years
+75,Personal Loan,Standard Chartered,11.25% - 14.49%,Up to 2.75%,Up to BDT25L,Up to 5 Years
+76,Personal Loan,Prime Bank,13.49% - 19.99%,Up to 2.00%,Up to BDT55L,1 - 6 Years
+77,Personal Loan,Habib Bank Limited,14.99%,Up to 2.00%,Up to BDT25L,1 - 6 Years
+78,Personal Loan,Brac Bank,16.50% - 20.00%,2.00%,Up to BDT78L,1 - 4 Years
+79,Personal Loan,UCB Bank,17.00% - 26.00%,2.00% - 3.00%,Up to BDT25L,1 - 6 Years
+80,Personal Loan,City Bank,18.00% - 36.00%,2.00% - 5.00%,Up to BDT25L,1 - 4 Years
+81,Personal Loan,Mutual Trust,18.00%,2.50%,Up to BDT25L,Up to 5 Years
+82,Personal Loan,Jamuna Bank,20.00% - 22.00%,1.00%,Up to BDT44L,1 - 6 Years
+83,Personal Loan,Eastern Bank,11.00% - 13.75%,0.75% onwards,Up to BDT90L,1 - 4 Years
+84,Personal Loan,Dhaka Bank,10.99% - 16.25%,0.50% - 3.00%,Up to BDT55L,1 - 6 Years
+85,Personal Loan,Uttara Bank,10.50% - 17.99%,Zero,Up to BDT25L,Up to 5 Years
+86,Startup Loan,HSBC,11.00% - 16.75%,Up to 3.50%,Up to BDT25L,Up to 5 Years
+87,Startup Loan,Dutch-Bangla Bank,11.99% - 25.00%,3.00% - 6.00%,Up to BDT30L,1 - 4 Years
+88,Startup Loan,Sonali Bank,12.50% - 18.00%,Up to 3.50%,Up to BDT25L,1 - 4 Years
+89,Startup Loan,IBBL,25.00% - 32.00%,3.00%,Up to BDT40L,1 - 6 Years
+90,Startup Loan,Grameen Bank,10.50% - 16.99%,Up to 2.50%,Up to BDT90L,1 - 6 Years
+91,Startup Loan,Janata Bank,10.75% - 21.50%,Up to 2.50%,Up to BDT25L,1 - 4 Years
+92,Startup Loan,Standard Chartered,11.25% - 14.49%,Up to 2.75%,Up to BDT25L,Up to 5 Years
+93,Startup Loan,Prime Bank,13.49% - 19.99%,Up to 2.00%,Up to BDT55L,1 - 6 Years
+94,Startup Loan,Habib Bank Limited,14.99%,Up to 2.00%,Up to BDT25L,1 - 6 Years
+95,Startup Loan,Brac Bank,16.50% - 20.00%,2.00%,Up to BDT78L,1 - 4 Years
+96,Startup Loan,UCB Bank,17.00% - 26.00%,2.00% - 3.00%,Up to BDT25L,1 - 6 Years
+97,Startup Loan,City Bank,18.00% - 36.00%,2.00% - 5.00%,Up to BDT25L,1 - 4 Years
+98,Startup Loan,Mutual Trust,18.00%,2.50%,Up to BDT25L,Up to 5 Years
+99,Startup Loan,Jamuna Bank,20.00% - 22.00%,1.00%,Up to BDT44L,1 - 6 Years
+100,Startup Loan,Eastern Bank,11.00% - 13.75%,0.75% onwards,Up to BDT90L,1 - 4 Years
+101,Startup Loan,Dhaka Bank,10.99% - 16.25%,0.50% - 3.00%,Up to BDT55L,1 - 6 Years
+102,Startup Loan,Uttara Bank,10.50% - 17.99%,Zero,Up to BDT25L,Up to 5 Years

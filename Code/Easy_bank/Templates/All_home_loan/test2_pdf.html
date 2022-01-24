@@ -1,0 +1,312 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Show Info</title>
+  </head>
+  <body>
+      
+        <div class="d-flex" style="height: 200px;">
+            <div class="vr">
+                
+          
+    <div class="wrapper">
+        <div class="title">
+            <center><strong> Home Loan Application Form</strong></center>
+         
+        </div>
+       <div> 
+           <br><br>
+    
+       
+    
+        {%for f in brac_home_loan1%}
+         <div class="form">
+            <div class="inputfield">
+               <label>Applicant's Name: {{f.applicants_name}}</label>
+               
+            </div>  
+             
+             <div class="inputfield">
+              <label>Applicant's Full Name: {{f.applicants_full_name}}</label>
+               
+            </div>  
+     
+            <div class="inputfield">
+             <label>Father's Name: {{f.applicants_father_name}}</label>
+             
+           </div>
+     
+             <div class="inputfield">
+             <label>Mother's Name: {{f.applicants_mother_name}}</label>
+             
+           </div>
+     
+           <div class="inputfield">
+             <label>Nationality: {{f.nationality}}</label>
+             
+           </div>
+     
+             <div class="inputfield">
+               <label>Gender: {{f.gender}}</label>
+               
+      
+            </div>
+              
+            <div class="inputfield">
+              
+                 <label>Contact No: {{f.contatct_no}}</label>
+                 
+            </div>
+     
+             <div class="inputfield">
+               <label>Email Address: {{f.email}}</label>
+               
+            </div> 
+     
+           <div class="inputfield">
+               <label>NID Number: {{f.nid}}</label>
+               
+            </div> 
+           
+            <div class="inputfield">
+               <label class="fs-1">Loan Type: {{f.loan_type}}</label>
+               
+            </div>
+            {%endfor%}
+          
+          
+
+            <p class="fw-bold" >I have agreed to terms and conditions</p>
+              
+           
+           
+    
+          </div>
+      </div>
+      <br><br>
+      <div class="title">
+        
+          <center><strong>Residential Status</strong></center>
+          
+    </div>
+    <br><br>
+    <div>
+    
+      {%for f in brac_home_loan2%}
+    
+    <div class="form">
+    <div class="inputfield">
+      <label>Full Address: {{f.full_address}} </label>
+      
+    </div>  
+    
+    <div class="inputfield">
+      <label>City: {{f.city}}</label>
+      
+    </div>  
+    
+    <div class="inputfield">
+    <label>Postal Code: {{f.postal_code}} </label>
+    </div>
+    
+    <div class="inputfield">
+    <label>Permanent Address: {{f.p_address}}</label>
+    
+    </div>
+     
+    <div class="inputfield">
+     
+        <label>Contact No: {{f.second_contact_no}}</label>
+        
+    </div>
+    
+    <div class="inputfield">
+      <label>Email Address: {{f.second_email}}</label>
+      
+    </div> 
+    
+    {%endfor%}
+     
+    </div>
+    </div>
+    <br><br>
+    <div class="title">
+        <center>
+            <strong>Proposed Property Information</strong>
+            
+        </center>   
+     
+     </div>
+     <br><br>
+    <div>
+      {%for f in brac_home_loan3%}
+    
+     
+     <div class="form">
+        <div class="inputfield">
+           <label>Property Type: {{f.property_type}}</label>
+        </div>  
+         
+         <div class="inputfield">
+           <label>Floor Size: {{f.floor_size}}</label>
+           
+        </div>  
+    
+        <div class="inputfield">
+         <label>Land Flat/Appartment No: {{f.flat_no}}</label>
+         
+       </div>
+    
+       <div class="inputfield">
+         <label>Nationality: {{f.nationality_2}}</label>
+         
+       </div>
+    
+       
+        <div class="inputfield">
+           <label>Utility & Others: {{f.utility}}</label>
+           
+        </div>
+    
+         <div class="inputfield">
+           <label>Expected Possession: {{f.expected_possesion}}</label>
+           
+        </div> 
+    
+         <div class="inputfield">
+           <label>Date Expected Handed: {{f.date_expected}}</label>
+           
+        </div> 
+        {%endfor%}
+         
+       
+     </div>
+    </div>
+    <br><br>
+    <div class="title">
+        <center>
+            <strong>Proposed Property Information</strong>
+        </center>  
+      
+    </div>
+    <br><br>
+    <div>
+      {%for f in brac_home_loan4%}
+    
+    <div class="form">
+    <div class="inputfield">
+    <label>Home Area: {{f.home_area}} </label>
+    
+    </div>  
+    
+    <div class="inputfield">
+    <label>Loan Requested: {{f.loan_requested}}</label>
+    
+    </div>  
+    
+    <div class="inputfield">
+    <label>Balance Amount: {{f.balance_amount}} </label>
+    
+    </div>
+    
+    <div class="inputfield">
+    <label>Source Of Payment: {{f.payment_source}} </label>
+    
+    </div>
+    
+    
+    <div class="inputfield">
+    <label>Property Selected: {{f.property_selected}}</label>
+    
+    </div>
+    
+    <div class="inputfield">
+    
+     <label>Contact No: {{f.contact_2}}</label>
+     
+    </div>
+    
+    <div class="inputfield">
+    <label>Email Address: {{f.email_3}}</label>
+    
+    </div>
+    {%endfor%}
+      
+    </div>
+    </div>
+    
+    <br><br>
+    
+    <div class="title">
+        <center>
+            <strong>Professional Informantion</strong>
+            
+        </center>  
+      
+    </div>
+    <br><br>
+    <div>
+      {%for f in brac_home_loan5%}
+    
+    <div class="form">
+    <div class="inputfield">
+    <label>Organization Name: {{f.organisation_name}} </label>
+   
+    </div>  
+    
+    <div class="inputfield">
+    <label>Designation: {{f.designation_department}}</label>
+    
+    </div>  
+    
+    <div class="inputfield">
+    <label>Office Address: {{f.office_address}}</label>
+    
+    </div>
+    
+    <div class="inputfield">
+    <label>Allowness: {{f.allowness}}</label>
+    
+    </div>
+    
+    <div class="inputfield">
+    
+    <label>Additional Income: {{f.additional_income}}</label>
+    
+    </div>
+    
+    <div class="inputfield">
+    <label>Total Salary: {{f.salary_total}}</label>
+    
+    </div> 
+    
+    <div class="inputfield">
+    <label>Office Phone No: {{f.office_no}}</label>
+    
+    </div> 
+    {%endfor%}
+    
+    
+    </div>
+    
+    </div>
+
+    </div>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
+
+

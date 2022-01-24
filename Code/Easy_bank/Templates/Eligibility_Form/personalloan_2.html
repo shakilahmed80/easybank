@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    .container{
+
+position: absolute;
+left:50%;
+top:50%;
+transform: translate(-50%,-50%);
+background-color:#A395C7;
+box-shadow: 10 10px 10px rgba(1,1,1,.1);
+width:600px;
+border-radius: 5px;
+
+}
+
+.container h1{
+
+margin-bottom:10px;
+color:#e53935;
+}
+
+.container input,textarea{
+
+padding:8px 15px;
+width:calc(100%-30px);
+margin:6px 0;
+resize:none;
+font-size:16px;
+}
+
+
+
+
+</style>
+
+<script>
+  
+  
+  function form_valid()
+        {
+     
+                var month= document.getElementById("two").value;
+                var username= document.getElementById("three").value;
+                var contact= document.getElementById("four").value;                   
+                var recontact= document.getElementById("five").value;
+                var gender= document.getElementById("seven").value;
+            
+
+                console.log(username);
+                console.log(username);
+                console.log(month);
+                console.log(gender);
+
+                
+                let regEx1 = /^[A-Za-z]+$/;     
+                let regEx2 = /^[0-9]{11}$/
+                
+             
+
+                
+                if(username=='')
+                {
+                        alert('Enter the user name.');
+                }
+                
+                else if(!regEx1.test(username))
+                {
+                        alert('Name can not contain whitespace');
+                }
+                
+                else if(contact=='')
+                {
+                        alert('Please enter Contact Number');
+                }
+                
+                else if(recontact=='')
+                {
+                        alert('Please Confirm Contact Number');
+                }
+                
+                else if(contact != recontact)
+                {
+                        alert (' Not Matched');
+                }
+                
+                else if(gender=='')
+                {
+                        alert('Please select gender');
+                }
+
+                
+                else if(month<15000)
+                {
+                        alert('Amount will be 15000 +');
+                }
+
+                else
+                {                                                           
+               alert('Thanks :) ');
+                            
+                }
+        }
+        
+
+  </script>
+<head>
+
+<title > Education Eligibility</title>
+
+</head>
+<body>
+      <header>
+        
+
+      </div>
+       
+       
+        </div>
+<head>
+      
+      <link rel= "stylesheet" href ="css/personalloan.css">
+
+</head>
+
+<body>
+
+<title>FeedBack</title>
+	<div class = "container">
+
+    <center><h1>P.Loan Eligibility</h1></center>
+		
+      <center>
+                
+ <fieldset>
+          
+          <h4>Personal Loan Eligibility</h4>
+       
+        
+        <table cellspacing="9" align="center" >
+        
+        
+        <tr>
+        <td >
+
+                   Username: 
+
+        </td>
+        <td>
+
+            <input type="text" placeholder="Enter Username here" id="three" >
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+
+                  Age :
+
+        </td>
+        <td>
+        
+                      <input type="radio"  name="year" value="male">
+                      <label for="male">40-55</label>
+                      
+                      <input type="radio"  name="year" value="female">
+                      <label for="female">55-70</label>
+                      
+                      <input type="radio"  name="year" value="other">
+                      <label for="other">75 plus</label>
+         
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+
+                  Contact Number :
+        </td>
+        <td>
+           
+            <input type="text" placeholder="Enter Number here" id="four" >
+
+        </td>
+        </tr>
+        <tr>
+        
+        <td >
+
+                   Re-type Number :
+
+        </td>
+        <td>
+
+            <input type="text" placeholder="Enter Number here" id="five">
+
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+
+                  Credit Score:
+
+        </td>
+        <td>
+        
+                      <input type="radio" id="seven" name="gender" value="male">
+                      <label for="male">750</label>
+                      
+                      <input type="radio" id="seven" name="gender" value="female">
+                      <label for="female">750 plus</label>
+                      
+                      
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+                  Employement Type :
+        
+        </td>
+        <td>
+               
+                      
+                      <input type="radio" id = "eight" name="status" value="Java">
+                      <label for="Java">Salaried</label>
+                      
+                      <input type="radio" id = "eight" name="status" value="Android">
+                      <label for="Android">Non Salaried</label>
+                      
+        </td>
+        </tr>
+        
+        
+        <tr>
+        <td >
+            
+             What is your net monthly income : 
+
+        </td>
+        <td>
+
+            <input type="text" placeholder="" id="two"  >
+
+        </td>
+        </tr>
+        
+        <tr>
+        
+        <tr>
+                <td>
+                    Loan Amount :
+                </td>
+
+                <td>
+
+                    <select>
+
+                        <option> Select amount </option>
+                        
+                        <option>50,000 Taka</option>
+
+                        <option>50,000 Taka - 1,00,000 Taka</option>
+
+                        <option>1,00,000 Taka - 2,00,000 Taka</option>
+
+                        <option>2,00,000 Taka - 5,00,000 Taka</option>
+
+                        <option>5,00,000 Taka plus</option>
+
+                    </select>
+
+
+                </td>
+            
+            <tr>
+        
+
+        <tr>
+        <td></td>
+        <td>
+        
+        <a href="/citypl1">
+            <input type="submit" value="Submit" onclick="form_valid()">
+        </a>
+        
+        </td>
+        </tr>
+        </table>
+        
+        
+        </div>
+
+            </center>
+	</div>
+
+</body>
+ 
+    </header> 
+
+</body>
+
+</html>

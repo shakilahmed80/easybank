@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    .container{
+
+position: absolute;
+left:50%;
+top:50%;
+transform: translate(-50%,-50%);
+background-color:#E6534A;
+box-shadow: 10 10px 10px rgba(1,1,1,.1);
+width:600px;
+border-radius: 5px;
+
+}
+
+.container h1{
+
+margin-bottom:10px;
+color:#fff;
+}
+
+.container input,textarea{
+
+padding:8px 15px;
+width:calc(100%-30px);
+margin:6px 0;
+resize:none;
+font-size:16px;
+}
+
+
+</style>
+
+<script>
+  
+  
+  function form_valid()
+        {
+     
+                var email= document.getElementById("two").value;
+                var username= document.getElementById("three").value;
+                var contact= document.getElementById("four").value;                   
+                var recontact= document.getElementById("five").value;
+               
+            
+
+                console.log(username);
+                console.log(username);
+                console.log(email);
+               
+
+                
+                let regEx1 = /^[A-Za-z]+$/;     
+                let regEx2 = /^[0-9]{11}$/
+                
+             
+
+                
+                if(username=='')
+                {
+                        alert('Enter the user name.');
+                }
+                
+                else if(!regEx1.test(username))
+                {
+                        alert('Name can not contain whitespace');
+                }
+                
+                else if(contact=='')
+                {
+                        alert('Please enter Contact Number');
+                }
+                
+                else if(recontact=='')
+                {
+                        alert('Please Confirm Contact Number');
+                }
+                
+                else if(contact != recontact)
+                {
+                        alert (' Not Matched');
+                }
+                
+              
+                
+                else if(email=='')
+                {
+                        alert('Please enter your user email id');
+                }
+
+                else
+                {                                                           
+               alert('Thanks :) ');
+                            
+                }
+        }
+        
+
+  </script>
+<head>
+
+<title > Education Eligibility</title>
+
+</head>
+<body>
+      <header>
+        
+
+      </div>
+       
+       
+        </div>
+<head>
+      
+      <link rel= "stylesheet" href ="css/loanaganist.css">
+
+</head>
+
+<body>
+
+<title>FeedBack</title>
+	<div class = "container">
+
+    <center><h1>LA. Property Eligibility</h1></center>
+		
+      <center>
+                
+ <fieldset>
+          
+          <h4>Loan Aganist Property Eligibility</h4>
+       
+        
+        <table cellspacing="9" align="center" >
+        <tr>
+        <td >
+
+                 Are You a Bangladeshi : 
+
+       </td>
+        <td>
+
+                      <input type="radio" id="one" name="student" value="male">
+                      <label for="male">Yes</label>
+                      
+                      <input type="radio" id="one" name="student" value="female">
+                      <label for="female">No</label>
+                      
+                      <input type="radio" id="one" name="student" value="other">
+                      <label for="other">Foreigner</label>   
+            
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+
+                   Username: 
+
+        </td>
+        <td>
+
+            <input type="text" placeholder="Enter Username here" id="three" >
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+
+                  Age :
+
+        </td>
+        <td>
+        
+
+                      <input type="radio"  name="year" value="female">
+                      <label for="female">25-40</label>
+                      
+                      <input type="radio"  name="year" value="other">
+                      <label for="other">40-75 </label>
+         
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+
+                  Contact Number :
+        </td>
+        <td>
+           
+            <input type="text" placeholder="Enter Number here" id="four" >
+
+        </td>
+        </tr>
+        <tr>
+        
+        <td >
+
+                   Re-type Number :
+
+        </td>
+        <td>
+
+            <input type="text" placeholder="Enter Number here" id="five">
+
+        </td>
+        </tr>
+        
+        
+        <tr>
+        <td >
+                  Resident Type :
+        
+        </td>
+        <td>
+               
+                      
+                      <input type="radio" id = "eight" name="status" value="Java">
+                      <label for="Java">Resident in BD</label>
+                      
+                      <input type="radio" id = "eight" name="status" value="Android">
+                      <label for="Android">Non-resident</label>
+                      
+                      <input type="radio" id = "eight" name="status" value="Ruby">
+                      <label for="Ruby">Person of BD origin</label>
+
+        </td>
+        </tr>
+        
+        
+        <tr>
+        <td >
+            
+            Email: 
+
+        </td>
+        <td>
+
+            <input type="text" placeholder="" id="two"  >
+
+        </td>
+        </tr>
+        
+        <tr>
+        
+        <tr>
+                <td>
+                    Select Your Job:
+                </td>
+
+                <td>
+
+                    <select>
+
+                        <option> Select type </option>
+                        
+                        <option>Salaried</option>
+
+                        <option>Self-Employed</option>
+
+                    </select>
+
+
+                </td>
+            
+            <tr>
+        
+
+        <tr>
+        <td></td>
+        
+        <td>  
+
+        <a href="/braclap1">
+            <input type="submit" value="Submit" onclick="form_valid()">
+        </a>
+        
+        </td> 
+
+        </tr>
+        </table>
+        
+        
+        </div>
+
+            </center>
+	</div>
+
+</body>
+ 
+    </header> 
+
+</body>
+
+</html>

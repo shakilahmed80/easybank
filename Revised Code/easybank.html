@@ -1,0 +1,1511 @@
+<DOCTYPE html>
+    <html>
+      <head>
+    
+         <style media="screen">
+             *{
+                 margin: 0;
+                 padding: 0;
+             }
+             html{
+                 scroll-behavior: smooth;
+                 font-family: tahoma;
+             }
+             h1{
+                 text-align: center;
+                 position: fixed;
+                 top: 0; left: 35%;
+                 color: purple;
+             }
+
+             ul{
+                 list-style: none;
+                 height: 100%;
+                 width: 100px;
+                 position: fixed;
+                 top: 0; left: 0;
+                 background: rgb(19, 99, 16);
+                 box-shadow: 2px 0px 5px black;
+             }
+
+             ul li{
+                 margin: 2px;
+                 padding: 2px;
+                 margin-top: 75px;
+             }
+
+             ul li a{
+                 color: white;
+                 text-decoration: none;
+                 font-size: 15px;
+                 padding: 5px;
+             }
+
+             ul li a:hover{
+                 background: white;
+                 color: #fc4a1a;
+             }
+
+             section{
+                 height: 100vh;
+                 width: 100vw;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 
+
+             }
+
+             #section1{
+                 background-image:linear-gradient(to right,#fffbd5, #3f5efb );
+             }
+
+             #section2{
+                 background-image:linear-gradient(to right,#D3CCE3,#ffad05);
+             }
+
+             #section3{
+                 background-image:linear-gradient(to right,#302b63,#ffad05);
+             }
+
+             #section4{
+                 background-image:linear-gradient(to right,#00b09b,#ffad05);
+             }
+
+             #section5{
+                 background-image:linear-gradient(to right,#ff105f,#ffad05);
+             }
+
+         </style>
+
+      </head>
+      <body>
+          <ul>
+              <li><a href="#section1">Basic Info</a></li>
+                <li><a href="#section2">Residential</a></li>
+                    <li><a href="#section3">Property</a></li>
+                        <li><a href="#section4">Proposed</a></li>
+                            <li><a href="#section5">Submit</a></li>
+          </ul>
+
+
+
+          <div class="content">
+              <section id="section1">
+              
+              
+              
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  
+    margin:0;
+    padding:0;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(img/house.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:Century Gothic;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #B124F5;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #ffd658;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+
+.button{
+
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.btn{
+
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color:#fff;
+  text-decoration:none;
+  transition: 0.6s ease;
+}
+
+.btn:hover{
+
+  background-color: #FFFFFF;
+  color:#000;
+}
+
+
+</style>
+
+<div class="wrapper">
+    <div class="title">
+                    Home loan Application Form
+    </div>
+   
+
+    <form method="POST">
+      {% csrf_token %}
+     <div class="form">
+        <div class="inputfield">
+           <label>Applicant's Name: </label>
+           <input type="text" class="input" name="applicants_name">
+        </div>  
+         
+         <div class="inputfield">
+           <label>Applicant's F.Name:</label>
+           <input type="text" class="input" name="applicants_full_name">
+        </div>  
+ 
+        <div class="inputfield">
+         <label>Father's Name: </label>
+         <input type="text" class="input" name="applicants_father_name">
+       </div>
+ 
+         <div class="inputfield">
+         <label>Mother's Name: </label>
+         <input type="text" class="input" name="applicants_mother_name">
+       </div>
+ 
+       <div class="inputfield">
+         <label>Nationality: </label>
+         <input type="text" class="input" name="nationality">
+       </div>
+ 
+         <div class="inputfield">
+           <label>Gender</label>
+           <div class="custom_select">
+             <select name= "gender">
+               <option value="">Select</option>
+               <option value="male">Male</option>
+               <option value="female">Female</option>
+             </select>
+           </div>
+        </div>
+          
+        <div class="inputfield">
+          
+             <label>Contact No:</label>
+             <input type="text" class="input" name="contatct_no">
+        </div>
+ 
+         <div class="inputfield">
+           <label>Email Address</label>
+           <input type="text" class="input" name="email">
+        </div> 
+ 
+       <div class="inputfield">
+           <label>NID Number:</label>
+           <input type="text" class="input" name="nid">
+        </div> 
+       
+        <div class="inputfield">
+           <label>Loan Type </label>
+           <div class="custom_select">
+             <select name= "loan_type">
+               <option value="">Select Your Loan</option>
+               <option value="six">6 Month</option>
+               <option value="six">8 Month</option>
+               <option value="six">10 Month</option>
+               <option value="six">12 Month</option>
+             </select>
+           </div>
+        </div>
+ 
+       <div class="inputfield terms">
+           <label class="check">
+             <input type="checkbox">
+             <span class="checkmark"></span>
+           </label>
+           <p>Agreed to terms and conditions</p>
+        </div> 
+    <center>
+       <div class="inputfield">
+         <input type="submit" value="Register" class="btn">
+       </div>
+     </div>
+    </center>
+     </form>
+      
+    
+    
+   <!--<div class="inputfield">
+   
+    <a href="" class= "btn">Next</a>
+
+       </center>     
+
+     </div> 
+    -->    
+   
+
+  </div>
+
+ </section>
+      
+</div>
+    
+
+              <section id="section2">
+                       
+                       <style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  
+    margin:0;
+    padding:0;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(img/house.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:Century Gothic;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #4FF769;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #B124F5;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #B124F5;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #B124F5;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #4FF769;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #B124F5;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+
+.button{
+
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.btn{
+
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color:#fff;
+  text-decoration:none;
+  transition: 0.6s ease;
+}
+
+.btn:hover{
+
+  background-color: #FFFFFF;
+  color:#000;
+}
+
+</style>
+
+<div class="wrapper">
+    <div class="title">
+            Residential Status
+    </div>
+   
+
+    <div class="form">
+       <div class="inputfield">
+          <label>Full Address: </label>
+          <input type="text" class="input">
+       </div>  
+        
+        <div class="inputfield">
+          <label>City:</label>
+          <input type="text" class="input">
+       </div>  
+
+       <div class="inputfield">
+        <label>Postal Code: </label>
+        <input type="text" class="input">
+      </div>
+
+        <div class="inputfield">
+        <label>Permanent Address: </label>
+        <input type="text" class="input">
+      </div>
+         
+       <div class="inputfield">
+         
+            <label>Contact No:</label>
+            <input type="text" class="input">
+       </div>
+
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" class="input">
+       </div> 
+
+      <center>
+    
+       <div class="inputfield">
+   
+    <a href="" class= "btn">Next</a>
+
+       </center>    
+    </div>
+</div>
+
+ </section>
+  
+</div>
+            
+</section>
+
+
+
+            <section id="section3">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  
+    margin:0;
+    padding:0;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(img/house.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:Century Gothic;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #FF2596;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #FF2596;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #FF2596;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #336B35;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+
+.button{
+
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.btn{
+
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color:#fff;
+  text-decoration:none;
+  transition: 0.6s ease;
+}
+
+.btn:hover{
+
+  background-color: #FFFFFF;
+  color:#000;
+}
+
+</style>
+
+<div class="wrapper">
+    <div class="title">
+     Proposed Property Information
+    </div>
+   
+
+    <div class="form">
+       <div class="inputfield">
+          <label>Property Type: </label>
+          <input type="text" class="input">
+       </div>  
+        
+        <div class="inputfield">
+          <label>Floor Size:</label>
+          <input type="text" class="input">
+       </div>  
+
+       <div class="inputfield">
+        <label>Land Flat/Appartment No: </label>
+        <input type="text" class="input">
+      </div>
+
+      <div class="inputfield">
+        <label>Nationality: </label>
+        <input type="text" class="input">
+      </div>
+
+      
+       <div class="inputfield">
+         
+            <label>Utility & Others:</label>
+            <input type="text" class="input">
+       </div>
+
+        <div class="inputfield">
+          <label>Expected Possession:</label>
+          <input type="text" class="input">
+       </div> 
+
+      <div class="inputfield">
+          <label>Date Expected Handed:</label>
+          <input type="text" class="input">
+       </div> 
+      
+      <center>
+    
+       <div class="inputfield">
+   
+    <a href="" class= "btn">Next</a>
+
+       </center>    
+    </div>
+</div>
+
+              
+             
+
+            </section>
+
+            <section id="section4">
+                <style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  
+    margin:0;
+    padding:0;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(img/house.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:Century Gothic;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #439C97;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #439C97;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fec107;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #439C97;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #BD9751;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+
+.button{
+
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.btn{
+
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color:#fff;
+  text-decoration:none;
+  transition: 0.6s ease;
+}
+
+.btn:hover{
+
+  background-color: #FFFFFF;
+  color:#000;
+}
+</style>
+
+<div class="wrapper">
+    <div class="title">
+           Proposed Property Information
+    </div>
+   
+
+    <div class="form">
+       <div class="inputfield">
+          <label>Home Area: </label>
+          <input type="text" class="input">
+       </div>  
+        
+        <div class="inputfield">
+          <label>Loan Requested:</label>
+          <input type="text" class="input">
+       </div>  
+
+       <div class="inputfield">
+        <label>Balance Amount: </label>
+        <input type="text" class="input">
+      </div>
+
+        <div class="inputfield">
+        <label>Source Of Payment: </label>
+        <input type="text" class="input">
+      </div>
+
+
+        <div class="inputfield">
+          <label>Property Selected</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="male">Yes</option>
+              <option value="female">No</option>
+            </select>
+          </div>
+       </div>
+         
+       <div class="inputfield">
+         
+            <label>Contact No:</label>
+            <input type="text" class="input">
+       </div>
+
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" class="input">
+       </div> 
+
+      <center>
+    
+       <div class="inputfield">
+   
+    <a href="" class= "btn">Next</a>
+
+       </center>    
+    </div>
+</div>
+      
+            </section>
+
+
+            <section id="section5">
+               
+              <style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body{
+  
+    margin:0;
+    padding:0;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(img/house.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:Century Gothic;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #D45844;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid #3DF525;
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #B124F5;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid #3DF525;
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: #fec107;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:  #D45844;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: #3DF525;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+
+.button{
+
+  position: absolute;
+  top: 60%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+
+.btn{
+
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color:#fff;
+  text-decoration:none;
+  transition: 0.6s ease;
+}
+
+.btn:hover{
+
+  background-color: #FFFFFF;
+  color:#000;
+}
+
+
+</style>
+
+<div class="wrapper">
+    <div class="title">
+            Professional Informantion
+    </div>
+   
+
+    <div class="form">
+       <div class="inputfield">
+          <label>Organization Name: </label>
+          <input type="text" class="input">
+       </div>  
+        
+        <div class="inputfield">
+          <label>Designation:</label>
+          <input type="text" class="input">
+       </div>  
+
+       <div class="inputfield">
+        <label>Office Address: </label>
+        <input type="text" class="input">
+      </div>
+
+        <div class="inputfield">
+        <label>Allowness: </label>
+        <input type="text" class="input">
+      </div>
+         
+       <div class="inputfield">
+         
+            <label>Additional Income:</label>
+            <input type="text" class="input">
+       </div>
+
+        <div class="inputfield">
+          <label>Total Salary</label>
+          <input type="text" class="input">
+       </div> 
+
+        <div class="inputfield">
+          <label>Office Phone No:</label>
+          <input type="text" class="input">
+       </div> 
+
+    <center>
+    
+       <div class="inputfield">
+   
+     <a href="" class= "btn">Register</a>
+
+       </center>    
+    </div>
+</div>
+      
+            </section>
+            
+
+          </div>
+      </body> 
+    </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Bank</title>
+
+    <style>
+
+        *{box-sizing: border-box;}
+
+        .menu{
+            background-color:#9ACD32;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .menu a{
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+
+        .menu a:hover{
+            background-color:#BC8F8F;
+        }
+
+        @media screen and (max-width: 600px){
+            .menu{
+                flex-direction: column;
+                padding: 10px;
+                
+            }
+            .menu a {
+                background-color:#B22222;
+                margin: 10px 0;
+                text-align: center;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#">Visit Bank</a>
+        <a href="#">Notice</a>
+        <a href="#">Contact Us</a>
+
+    </div>
+</body>
+</html>

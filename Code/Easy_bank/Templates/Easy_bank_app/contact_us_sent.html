@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+{% load widget_tweaks %}
+
+  {%if request.user.is_authenticated%}
+    {% include "Easy_bank_app/navbar.html" %}
+  {%else%}
+    {% include "Easy_bank_app/navbar.html" %}
+  {%endif%}
+<br><br><br>
+<br>
+<div style="text-align:center;">
+    <img src="https://raw.githubusercontent.com/Arshad360/Easy-Bank/main/Code/Easy_bank/Static/Easy_bank_app/images/success.png"  style="width:450px; height:400px; ">
+</div>
+<br>
+  

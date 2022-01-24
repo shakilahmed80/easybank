@@ -1,0 +1,1298 @@
+<DOCTYPE html>
+    <html>
+      <head>
+    
+         <style media="screen">
+             *{
+                 margin: 0;
+                 padding: 0;
+             }
+             html{
+                 scroll-behavior: smooth;
+                 font-family: tahoma;
+             }
+             h1{
+                 text-align: center;
+                 position: fixed;
+                 top: 0; left: 35%;
+                 color: purple;
+             }
+
+             ul{
+                 list-style: none;
+                 height: 100%;
+                 width: 100px;
+                 position: fixed;
+                 top: 0; left: 0;
+                 background: crimson;
+                 box-shadow: 2px 0px 5px black;
+             }
+
+             ul li{
+                 margin: 5px;
+                 padding: 5px;
+                 margin-top: 75px;
+             }
+
+             ul li a{
+                 color: white;
+                 text-decoration: none;
+                 font-size: 20px;
+                 padding: 5px;
+             }
+
+             ul li a:hover{
+                 background: white;
+                 color: blue;
+             }
+
+             section{
+                 height: 100vh;
+                 width: 100vw;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 text-transform: uppercase;
+
+             }
+
+             #section1{
+                 background: linear-gradient(-45deg, white 40%, yellow 0%);
+             }
+
+             #section2{
+                 background: linear-gradient(-45deg, blue 40%, lightgreen 0%);
+             }
+
+             #section3{
+                 background: linear-gradient(-45deg, green 40%, lightblue 0%);
+             }
+
+             #section4{
+                 background: linear-gradient(-45deg, yellow 40%, tomato 0%);
+             }
+
+             #section5{
+                 background: linear-gradient(-45deg, white 40%, Silver 0%);
+             }
+
+         </style>
+
+
+      </head>
+
+
+      <body>
+          <h1>BRAC Bank Credit Card Form</h1>
+          <ul>
+              <li><a href="#section1">section1</a></li>
+                <li><a href="#section2">section2</a></li>
+                    <li><a href="#section3">section3</a></li>
+                        <li><a href="#section4">section4</a></li>
+                            <li><a href="#section5">section5</a></li>
+          </ul>
+
+
+
+          <div class="content">
+              <section id="section1">
+              
+
+
+                <script>
+  
+  
+                    function form_valid()
+                          {
+                       
+                                  var ApplicantName= document.getElementById("one").value;
+                                  var FullName= document.getElementById("two").value;
+                                  var ApplicantFatherName= document.getElementById("three").value;                   
+                                  var ApplicantMotherName= document.getElementById("five").value;
+                                  var Nationality= document.getElementById("nine").value;
+                                  var contact= document.getElementById("six").value;
+                                  var Email= document.getElementById("ten").value;
+                                  var NIDno= document.getElementById("eight").value;
+                                  var gender= document.getElementById("seven").value;
+                                  
+                                  
+                              
+                  
+                                  
+                  
+                  
+                                  console.log(ApplicantName);
+                                  console.log(FullName);
+                                  console.log(ApplicantFatherName);
+                                  console.log(ApplicantMotherName);
+                                  console.log(Nationality);
+                                  console.log(gender);
+                                  console.log(contact);
+                                  console.log(Email);
+                                  console.log(NIDno);
+                                  console.log(Cardtype);
+                  
+                                  
+                        
+                                  
+                               
+                  
+                                  if(ApplicantName=='')
+                                  {
+                                          alert('Enter your name');
+                                  }
+                                  
+                                  else if(FullName=='')
+                                  {
+                                          alert('Enter the Full name.');
+                                  }
+                                  
+                                  else if(ApplicantFatherName=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  
+                                  else if(ApplicantMotherName=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  
+                                  else if(Nationality=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                  
+                                  
+                                  else if(gender=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+
+                                  else if(contact=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  else if(Email=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  else if(NIDno=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  else if(Cardtype=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                  
+                                  else
+                                  {                                                           
+                                 alert('Thanks :) ');
+                                              
+                                  }
+                          }
+                          
+                  
+                    </script>
+                  
+                
+                <body>
+                
+                <title>Form</title>
+                  <div class = "container">
+                
+                  
+                      
+                    <center>
+                              
+                <fieldset>
+                        
+                        <h4>Personal Details</h4>
+                     
+                      
+                      <table cellspacing="30" align="center" >
+                      <tr>
+                      <td >
+                
+                        ApplicantName: 
+                
+                     </td>
+                      <td>
+                
+                          <input type="text" placeholder="Enter name here" id="one" >
+                      </td>
+                      </tr>
+                      
+                      <tr>
+                      <td >
+                
+                        FullName: 
+                
+                      </td>
+                      <td>
+                
+                        <input type="text" placeholder="Enter full name here" id="two" >
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                    <td >
+                
+                      ApplicantFatherName: 
+                
+                    </td>
+                    <td>
+                         
+                        <input type="text" placeholder="Enter father name here" id="three" >
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                    <td >
+                
+                      ApplicantMother Name: 
+                
+                    </td>
+                    <td>
+                
+                          <input type="text" placeholder="Enter Mothers name" id="five">
+                
+                      </td>
+                      </tr>
+                
+                      <tr>
+                        <td >
+                
+                          Nationality: 
+                
+                        </td>
+                        <td>
+                  
+                              <input type="text" placeholder="Enter nationality" id="nine">
+                  
+                          </td>
+                          </tr>
+                      
+                      <tr>
+                      <td >
+                
+                                Gender :
+                
+                      </td>
+                      <td>
+                      
+                                    <input type="radio" id="seven" name="gender" value="male">
+                                    <label for="male">Male</label>
+                                    
+                                    <input type="radio" id="seven" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                    
+                                    <input type="radio" id="seven" name="gender" value="other">
+                                    <label for="other">Other</label>
+                       
+                      </td>
+                      </tr>
+                      
+                
+                      
+                      <tr>
+                      <td >
+                
+                              Contact: 
+                
+                      </td>
+                      <td>
+                
+                          <input type="text" placeholder="" id="six" >
+                
+                      </td>
+                      </tr>
+                      
+                      <tr>
+                      <td >
+                          
+                          Email: 
+                
+                      </td>
+                      <td>
+                
+                          <input type="text" placeholder="" id="ten"  >
+                
+                      </td>
+                      </tr>
+                
+                      <tr>
+                        <td >
+                
+                                NIDno: 
+                
+                        </td>
+                        <td>
+                
+                            <input type="text" placeholder="" id="eight" >
+                
+                        </td>
+                        </tr>
+                      
+                      <tr>
+                      
+                      <tr>
+                              <td>
+                                  Card Type:
+                              </td>
+                
+                              <td>
+                
+                                  <select>
+                
+                                      <option> Select your Card type </option>
+                                      
+                                      <option>Platinum card</option>
+                
+                                      <option>Gold card</option>
+                
+                                      <option>Silver card</option>
+                
+                                      <option>Tara card</option>
+                
+                          
+                
+                                  </select>
+                
+                              </td>
+                          
+                          <tr>
+                      
+                
+                
+                      </table>
+                      
+                      
+                      </div>
+                
+                          </center>
+                  </div>
+                
+                </body>
+                
+                
+                
+                </body>
+                
+                 </section>
+                </div>
+
+              <section id="section2">
+
+
+                <script>
+  
+  
+                    function form_valid()
+                          {
+                       
+                                  var FullAddress= document.getElementById("one").value;
+                                  var City= document.getElementById("two").value;
+                                  var PostalCode= document.getElementById("three").value;
+                                  var Parmentaddress= document.getElementById("four").value;                   
+                                  var Contactno2= document.getElementById("five").value;
+                                  var Email= document.getElementById("six").value;
+                              
+                
+                  
+                                  console.log(FullAddress);
+                                  console.log(City);
+                                  console.log(PostalCode);
+                                  console.log(Parmentaddress);
+                                  console.log(Contactno2);
+                                  console.log(Email);
+                                 
+                                  
+                               
+                  
+                                  if(FullAddress=='')
+                                  {
+                                          alert('Enter your name');
+                                  }
+                                  
+                                  else if(City=='')
+                                  {
+                                          alert('Enter the Full name.');
+                                  }
+                                  
+                                  else if(PostalCode=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  
+                                  else if(Parmentaddress=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  
+                                  else if(Contactno2=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                  
+                                  
+                                  else if(Email=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                
+                                  
+                  
+                                  else
+                                  {                                                           
+                                 alert('Thanks :) ');
+                                              
+                                  }
+                          }
+                          
+                  
+                    </script>
+                  <body>
+                
+                    <title>FeedBack</title>
+                        <div class = "container">
+                    
+                        
+                            
+                          <center>
+                                    
+                     <fieldset>
+                              
+                              <h4>Residential status</h4>
+                           
+                            
+                            <table cellspacing="30" align="center" >
+                            <tr>
+                            <td >
+                    
+                              FullAddress: 
+                    
+                           </td>
+                            <td>
+                    
+                                <input type="text" placeholder="Enter here" id="one" >
+                            </td>
+                            </tr>
+                            
+                            <tr>
+                            <td >
+                    
+                                City: 
+                    
+                            </td>
+                            <td>
+                    
+                              <input type="text" placeholder="Enter full name here" id="two" >
+                          </td>
+                          </tr>
+                          
+                          <tr>
+                          <td >
+                  
+                            PostalCode: 
+                  
+                          </td>
+                          <td>
+                               
+                              <input type="text" placeholder="Enter here" id="three" >
+                          </td>
+                          </tr>
+                          
+                          <tr>
+                          <td >
+                  
+                            Parmentaddress: 
+                  
+                          </td>
+                          <td>
+                    
+                                <input type="text" placeholder="Enter here" id="four">
+                    
+                            </td>
+                        </tr>
+                            
+                      
+                            
+                            <tr>
+                            <td >
+                    
+                                    Contactno2: 
+                    
+                            </td>
+                            <td>
+                    
+                                <input type="text" placeholder="" id="five" >
+                    
+                            </td>
+                            </tr>
+                            
+                            <tr>
+                            <td >
+                                
+                                Email: 
+                    
+                            </td>
+                            <td>
+                    
+                                <input type="text" placeholder="" id="six"  >
+                    
+                            </td>
+                            </tr>
+                
+                    
+                                    </td>
+                                
+                                <tr>
+                            
+                    
+                  
+                            </table>
+                            
+                            
+                            </div>
+                    
+                                </center>
+                        </div>
+                    
+                    </body>
+                     
+                     
+                    
+                    </body>
+                
+                       </section>
+                </div>
+                </section>
+
+
+
+            <section id="section3">
+                <script>
+
+  
+  
+                    function form_valid()
+                          {
+                       
+                                  var Organisationname= document.getElementById("one").value;
+                                  var Designationdepartment= document.getElementById("two").value;
+                                  var Officeaddress= document.getElementById("three").value;
+                                  var Allowness= document.getElementById("four").value;                   
+                                  var Additionalincome= document.getElementById("five").value;
+                                  var Salarieytotal= document.getElementById("six").value;
+                                  var Officephone= document.getElementById("seven").value;
+                                
+                              
+                  
+                                  
+                  
+                  
+                                  console.log(Organisationname);
+                                  console.log(Designationdepartment);
+                                  console.log(Officeaddress);
+                                  console.log(Allownes);
+                                  console.log(Additionalincome);
+                                  console.log(Salarieytotal);
+                                  console.log(Officephone);
+                                  
+                  
+                                  
+                        
+                                  
+                               
+                  
+                                  if(Organisationname=='')
+                                  {
+                                          alert('Enter your name');
+                                  }
+                                  
+                                  else if(Designationdepartment=='')
+                                  {
+                                          alert('Enter the Full name.');
+                                  }
+                                  
+                                  else if(Officeaddress=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  
+                                  else if(Allowness=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  
+                                  else if(Additionalincome=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                  
+                                  
+                                  else if(Salarieytotal=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                
+                                  else if(Officephone=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  
+                                  else
+                                  {                                                           
+                                 alert('Thanks :) ');
+                                              
+                                  }
+                          }
+                          
+                  
+                    </script>
+                
+                
+                <body>
+                
+                <title>FeedBack</title>
+                  <div class = "container">
+                
+                  
+                      
+                    <center>
+                              
+                <fieldset>
+                        
+                        <h4>Professional information</h4>
+                     
+                      
+                      <table cellspacing="30" align="center" >
+                      <tr>
+                      <td >
+                
+                        Organisationname: 
+                
+                     </td>
+                      <td>
+                
+                          <input type="text" placeholder="Enter name here" id="one" >
+                      </td>
+                      </tr>
+                      
+                      <tr>
+                      <td >
+                
+                        Designationdepartment: 
+                
+                      </td>
+                      <td>
+                
+                        <input type="text" placeholder="Enter here" id="two" >
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                    <td >
+                
+                        Officeaddress: 
+                
+                    </td>
+                    <td>
+                         
+                        <input type="text" placeholder="Enter here" id="three" >
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                    <td >
+                
+                        Allowness: 
+                
+                    </td>
+                    <td>
+                
+                          <input type="text" placeholder="Enter here" id="four">
+                
+                      </td>
+                      </tr>
+                
+                      <tr>
+                        <td >
+                
+                            Additionalincome: 
+                
+                        </td>
+                        <td>
+                  
+                              <input type="text" placeholder="Enter here" id="five">
+                  
+                          </td>
+                          </tr>
+                      
+                
+                      
+                      <tr>
+                      <td >
+                
+                        Salarieytotal: 
+                
+                      </td>
+                      <td>
+                
+                          <input type="text" placeholder="" id="six" >
+                
+                      </td>
+                      </tr>
+                
+                      <tr>
+                        <td >
+                
+                            Officephone: 
+                
+                        </td>
+                        <td>
+                
+                            <input type="text" placeholder="" id="seven" >
+                
+                        </td>
+                        </tr>
+                      
+                      
+                      </table>
+                      
+                      
+                      </div>
+                
+                          </center>
+                  </div>
+                
+                </body>
+                
+                
+                
+                </body>
+                
+                </section>
+                
+            <section id="section4">
+                <body>
+
+                    <script>
+  
+  
+                        function form_valid()
+                              {
+                           
+                                      var ApplicantName= document.getElementById("one").value;
+                                      var FullName= document.getElementById("two").value;
+                                      var ApplicantFatherName= document.getElementById("three").value;
+                                      var password= document.getElementById("four").value;                   
+                                      var ApplicantMotherName= document.getElementById("five").value;
+                                      var contact= document.getElementById("six").value;
+                                      var gender= document.getElementById("seven").value;
+                                      var NIDno= document.getElementById("eight").value;
+                                      var Nationality= document.getElementById("nine").value;
+                                      var Email= document.getElementById("ten").value;
+                                  
+                      
+                                      
+                      
+                      
+                                      console.log(ApplicantName);
+                                      console.log(FullName);
+                                      console.log(ApplicantFatherName);
+                                      console.log(ApplicantMotherName);
+                                      console.log(Nationality);
+                                      console.log(gender);
+                                      console.log(contact);
+                                      console.log(Email);
+                                      console.log(NIDno);
+                                      console.log(Cardtype);
+                      
+                                      
+                            
+                                      
+                                   
+                      
+                                      if(ApplicantName=='')
+                                      {
+                                              alert('Enter your name');
+                                      }
+                                      
+                                      else if(FullName=='')
+                                      {
+                                              alert('Enter the Full name.');
+                                      }
+                                      
+                                      else if(ApplicantFatherName=='')
+                                      {
+                                              alert('Please enter here');
+                                      }
+                                      
+                                      else if(ApplicantMotherName=='')
+                                      {
+                                              alert('Please enter here');
+                                      }
+                                      
+                                      else if(Nationality=='')
+                                      {
+                                              alert('Please enter here');
+                                      }
+                      
+                                      
+                                      else if(gender=='')
+                                      {
+                                              alert('Please enter here');
+                                      }
+    
+                                      else if(contact=='')
+                                      {
+                                              alert('Please enter here');
+                                      }
+                                      else if(Email=='')
+                                      {
+                                              alert('Please enter here');
+                                      }
+                                      else if(NIDno=='')
+                                      {
+                                              alert('Please enter here');
+                                      }
+                                      else if(Cardtype=='')
+                                      {
+                                              alert('Please enter here');
+                                      }
+                      
+                                      else
+                                      {                                                           
+                                     alert('Thanks :) ');
+                                                  
+                                      }
+                              }
+                              
+                      
+                        </script>
+              
+                    <title>FeedBack</title>
+                        <div class = "container">
+                    
+                        
+                            
+                          <center>
+                                    
+                     <fieldset>
+                              
+                              <h4>Information of suplimentary card</h4>
+                           
+                            
+                              <table cellspacing="30" align="center" >
+                                <tr>
+                                <td >
+                          
+                                  ApplicantName: 
+                          
+                               </td>
+                                <td>
+                          
+                                    <input type="text" placeholder="Enter name here" id="one" >
+                                </td>
+                                </tr>
+                                
+                                <tr>
+                                <td >
+                          
+                                  FullName: 
+                          
+                                </td>
+                                <td>
+                          
+                                  <input type="text" placeholder="Enter full name here" id="two" >
+                              </td>
+                              </tr>
+                              
+                              <tr>
+                              <td >
+                          
+                                ApplicantFatherName: 
+                          
+                              </td>
+                              <td>
+                                   
+                                  <input type="text" placeholder="Enter father name here" id="three" >
+                              </td>
+                              </tr>
+                              
+                              <tr>
+                              <td >
+                          
+                                ApplicantMother Name: 
+                          
+                              </td>
+                              <td>
+                          
+                                    <input type="text" placeholder="Enter Mothers name" id="five">
+                          
+                                </td>
+                                </tr>
+                          
+                                <tr>
+                                  <td >
+                          
+                                    Nationality: 
+                          
+                                  </td>
+                                  <td>
+                            
+                                        <input type="text" placeholder="Enter nationality" id="nine">
+                            
+                                    </td>
+                                    </tr>
+                                
+                                <tr>
+                                <td >
+                          
+                                          Gender :
+                          
+                                </td>
+                                <td>
+                                
+                                              <input type="radio" id="seven" name="gender" value="male">
+                                              <label for="male">Male</label>
+                                              
+                                              <input type="radio" id="seven" name="gender" value="female">
+                                              <label for="female">Female</label>
+                                              
+                                              <input type="radio" id="seven" name="gender" value="other">
+                                              <label for="other">Other</label>
+                                 
+                                </td>
+                                </tr>
+                                
+                          
+                                
+                                <tr>
+                                <td >
+                          
+                                        Contact: 
+                          
+                                </td>
+                                <td>
+                          
+                                    <input type="text" placeholder="" id="six" >
+                          
+                                </td>
+                                </tr>
+                                
+                                <tr>
+                                <td >
+                                    
+                                    Email: 
+                          
+                                </td>
+                                <td>
+                          
+                                    <input type="text" placeholder="" id="ten"  >
+                          
+                                </td>
+                                </tr>
+                          
+                                <tr>
+                                  <td >
+                          
+                                          NIDno: 
+                          
+                                  </td>
+                                  <td>
+                          
+                                      <input type="text" placeholder="" id="eight" >
+                          
+                                  </td>
+                                  </tr>
+                                
+                                <tr>
+                                
+                                <tr>
+                                        <td>
+                                            Card Type:
+                                        </td>
+                          
+                                        <td>
+                          
+                                            <select>
+                          
+                                                <option> Select your Card type </option>
+                                                
+                                                <option>Platinum card</option>
+                          
+                                                <option>Gold card</option>
+                          
+                                                <option>Silver card</option>
+                          
+                                                <option>Tara card</option>
+                          
+                                    
+                          
+                                            </select>
+                          
+                                        </td>
+                                    
+                                    <tr>
+                                
+                          
+                          
+                                </table>
+                                
+                                
+                                </div>
+                          
+                                    </center>
+                            </div>
+                          
+                          </body>
+                          
+                          
+                          
+                          </body>
+                          
+                           </section>
+                          </div>
+
+            <section id="section5">
+
+
+                <script>
+  
+  
+                    function form_valid()
+                          {
+                       
+                                  var Accountno= document.getElementById("one").value;
+                                  var Accounttype= document.getElementById("two").value;
+                                  var BalanceAmount= document.getElementById("three").value;
+                                  var statementType= document.getElementById("four").value;                   
+                                  var Contactno= document.getElementById("five").value;
+                                  var Email= document.getElementById("six").value;
+                              
+                              
+                  
+                                  
+                  
+                  
+                                  console.log(Accountno);
+                                  console.log(Accounttype);
+                                  console.log(BalanceAmount);
+                                  console.log(statementType);
+                                  console.log(Contactno);
+                                  console.log(Email);
+                                  console.log(Brunch);
+                          
+                  
+                                  
+                        
+                                  
+                               
+                  
+                                  if(Accountno=='')
+                                  {
+                                          alert('Enter your name');
+                                  }
+                                  
+                                  else if(Accounttype=='')
+                                  {
+                                          alert('Enter the Full name.');
+                                  }
+                                  
+                                  else if(BalanceAmount=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  
+                                  else if(statementType=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  
+                                  else if(Contactno=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                  
+                                  
+                                  else if(Email=='')
+                                  {
+                                          alert('Please enter here');
+                                  }
+                                  else if(Brunch=='')
+                                                  {
+                                                          alert('Please enter here');
+                                                  }
+                
+                             
+                  
+                                  else
+                                  {                                                           
+                                 alert('Thanks :) ');
+                                              
+                                  }
+                          }
+                          
+                  
+                    </script>
+                
+                
+                <body>
+                
+                    <title>FeedBack</title>
+                        <div class = "container">
+                    
+                        
+                            
+                          <center>
+                                    
+                     <fieldset>
+                              
+                              <h4>Bank account information</h4>
+                           
+                            
+                            <table cellspacing="30" align="center" >
+                            <tr>
+                            <td >
+                    
+                                Accountno: 
+                    
+                           </td>
+                            <td>
+                    
+                                <input type="text" placeholder="Enter here" id="one" >
+                            </td>
+                            </tr>
+                            
+                            <tr>
+                            <td >
+                    
+                                Accounttype: 
+                    
+                            </td>
+                            <td>
+                    
+                              <input type="text" placeholder="Enter account type here" id="two" >
+                          </td>
+                          </tr>
+                          
+                          <tr>
+                          <td >
+                  
+                            BalanceAmount: 
+                  
+                          </td>
+                          <td>
+                               
+                              <input type="text" placeholder="Enter amount here" id="three" >
+                          </td>
+                          </tr>
+                          
+                            <tr>
+                            <td >
+                    
+                                      statementType :
+                    
+                            </td>
+                            <td>
+                            
+                                          <input type="radio" id="four" name="statement type" value="e-statement">
+                                          <label for="male">Male</label>
+                                          
+                                          <input type="radio" id="four" name="statement type" value="  Printed">
+                                          <label for="female">Female</label>
+                                          
+                                          
+                             
+                            </td>
+                            </tr>
+                            
+                      
+                            
+                            <tr>
+                            <td >
+                    
+                                    Contactno: 
+                    
+                            </td>
+                            <td>
+                    
+                                <input type="text" placeholder="" id="five" >
+                    
+                            </td>
+                            </tr>
+                            
+                            <tr>
+                            <td >
+                                
+                                Email: 
+                    
+                            </td>
+                            <td>
+                    
+                                <input type="text" placeholder="" id="six"  >
+                    
+                            </td>
+                            </tr>
+                
+                            
+                                    <td>
+                                        Brunch:
+                                    </td>
+                    
+                                    <td>
+                    
+                                        <select>
+                    
+                                            <option> Select your Brunch Area </option>
+                                            
+                                            <option>Dhaka</option>
+                    
+                                            <option>Chittagong</option>
+                    
+                                          
+                    
+                                
+                    
+                                        </select>
+                    
+                                    </td>
+                                
+                                <tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                        
+                                        <input type="submit" value="Submit"  onclick="form_valid()" ></td>
+                                        </tr>
+                            
+                    
+                  
+                            </table>
+                            
+                            
+                            </div>
+                    
+                                </center>
+                        </div>
+                    
+                    </body>
+                     
+                     
+                    
+                    </body>
+                    
+                
+                </section>
+                
+                
+
+
+                
+
+          </div>
+      </body> 
+    </html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+
+<Style>
+        
+.container{
+
+position: absolute;
+left:50%;
+top:50%;
+transform: translate(-50%,-50%);
+background-color:#70B8F2;
+box-shadow: 10 10px 10px rgba(1,1,1,.1);
+width:600px;
+border-radius: 5px;
+
+}
+
+.container h1{
+
+margin-bottom:10px;
+color:#e53935;
+}
+
+.container input,textarea{
+
+padding:8px 15px;
+width:calc(100%-30px);
+margin:6px 0;
+resize:none;
+font-size:16px;
+}
+
+</Style>
+<script>
+  
+  function form_valid()
+        {
+     
+                var email= document.getElementById("username").value;
+                var username= document.getElementById("age").value;
+                var contact= document.getElementById("four").value;                   
+                var recontact= document.getElementById("number").value;
+                var gender= document.getElementById("gender").value;
+            
+
+                console.log(username);
+                console.log(username);
+                console.log(email);
+                console.log(gender);
+
+                
+                let regEx1 = /^[A-Za-z]+$/;     
+                let regEx2 = /^[0-9]{11}$/
+                
+                
+                if(username=='')
+                {
+                        alert('Enter the user name.');
+                }
+                
+                else if(!regEx1.test(username))
+                {
+                        alert('Name can not contain whitespace');
+                }
+                
+                else if(contact=='')
+                {
+                        alert('Please enter Contact Number');
+                }
+                
+                else if(recontact=='')
+                {
+                        alert('Please Confirm Contact Number');
+                }
+                
+                else if(contact != recontact)
+                {
+                        alert (' Not Matched');
+                }
+                
+                else if(gender=='')
+                {
+                        alert('Please select gender');
+                }
+
+                
+                else if(email=='')
+                {
+                        alert('Please enter your user email id');
+                }
+
+                else
+                {                                                           
+               alert('Thanks :) ');
+                            
+                }
+        }
+        
+  </script>
+<head>
+
+<title > Car Eligibility</title>
+
+</head>
+<body>  
+      
+<head>
+      
+      <link rel= "stylesheet" href ="css/carloan.css">
+
+</head>
+
+<body>
+        
+<title>car loan eligibility</title>
+	<div class = "container">
+
+    <center><h1>C.Loan Eligibility</h1></center>
+		
+      <center>
+                
+ <fieldset>
+        
+          <h4>Car Loan Eligibility</h4>
+        
+        <table cellspacing="9" align="center" >
+        
+                
+        <tr>
+        
+        <td >
+        
+
+                 Are You a Bangladeshi : 
+
+        </td>
+        <td>
+
+                      <input type="radio" id="bangladeshi" name="bangladeshi" value="male" required>
+                      <label for="male">Yes</label>
+                      
+                      <input type="radio" id="bangladeshi" name="bangladeshi" value="female" required>
+                      <label for="female">No</label>
+                      
+                      <input type="radio" id="bangladeshi" name="bangladeshi" value="other" required>
+                      <label for="other">Foreigner</label>   
+            
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+
+                   Username: 
+
+        </td>
+        <td>
+
+            <input type="text" placeholder="Enter Username here" id="username" name="username" required >
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+
+                  Age :
+
+        </td>
+        <td>
+        
+                      <input type="radio"  value="male" id="age" name="age" required >
+                      <label for="male">18-25</label>
+                      
+                      <input type="radio"  value="female" id="age" name="age" required >
+                      <label for="female">25-40</label>
+                      
+                      <input type="radio"  value="other" id="age" name="age" required >
+                      <label for="other">40 Plus</label>
+         
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+
+                  Contact Number :
+        </td>
+        <td>
+           
+            <input type="text" placeholder="Enter Number here" id="four" required  >
+
+        </td>
+        </tr>
+        <tr>
+        
+        <td >
+
+                   Re-type Number :
+
+        </td>
+        <td>
+
+            <input type="text" placeholder="Enter Number here" id="number" name="number" required>
+
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+
+                  Gender :
+
+        </td>
+        <td>
+        
+                      <input type="radio" id="gender" value="male" name="gender" required>
+                      <label for="male">Male</label>
+                      
+                      <input type="radio" id="gender"  value="female" name="gender" required>
+                      <label for="female">Female</label>
+                      
+                      <input type="radio" id="gender"  value="other" name="gender" required>
+                      <label for="other">Other</label>
+         
+        </td>
+        </tr>
+        
+        <tr>
+        <td >
+                  Net Income :
+        
+        </td>
+        <td>
+               
+                      
+                      <input type="radio" id = "net_income" value="Java" name="net_income" required>
+                      <label for="Java">20K</label>
+                      
+                      <input type="radio" id = "net_income" value="Android" name="net_income" required>
+                      <label for="Android">20K-35K</label>
+                      
+                      <input type="radio" id = "net_income" value="Ruby" name="net_income" required>
+                      <label for="Ruby">35K-50K</label>
+
+                     
+        </td>
+        </tr>
+        
+        
+        
+        <tr>
+        <td >
+            
+            Email: 
+
+        </td>
+        <td>
+
+            <input type="text" placeholder="" id="email" name="email" required  >
+
+        </td>
+        </tr>
+        
+        <tr>
+        
+        
+        
+
+        <tr>
+        
+
+        <td>
+
+                
+        
+        <a href="/citycl1">
+                <input type="submit" value="Submit" onclick="form_valid()">
+        </a>
+                
+                        
+        </td>
+        
+        
+        </tr>
+        
+        </table>
+        
+        
+        
+        </div>
+
+            </center>
+	
+        
+</body>
+ 
+    </header> 
+
+</body>
+
+</html>
+
